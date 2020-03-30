@@ -1,0 +1,49 @@
+#include<sydio.h>
+#include<conio.h>
+void main()
+{
+int choice;
+int c1=1,c2=1,turn=1;
+clrscr();
+do
+{
+printf("\n1.Process 1 Enter");
+printf("\n2.Process 2 Enter");
+printf("\n3.Both Process Enter");
+printf("\n4.Exit");
+scanf("%d",&choice);
+if(choice==1)
+{
+c1=0;
+while(c2==0)
+{
+if(turn==2)
+c1=1
+while(turn==2);
+c1=0;
+}
+printf("\nProcess P1 Enters the Critical section");
+c1=1;
+turn=2;
+else
+printf("\nIt is the turn process P2");
+}
+if(choice==2)
+{
+                c2=0;
+                while(c1==0)
+{
+                if(turn==1)
+                c2=1;
+while(turn==1);
+c2=0;
+}
+printf("\nProcess P2 enters in critical section");
+c2=1;
+turn=1;
+else
+printf("\nIt is turn of Process P1");
+}
+}
+while(choice!=4);
+}
